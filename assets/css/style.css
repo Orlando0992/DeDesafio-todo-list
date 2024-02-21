@@ -1,0 +1,12 @@
+body {
+    background-color:#96cfe3;
+}
+
+button {
+    background-color: #236681 !important;
+    color: white !important;
+}
+
+.container{
+    width: 40vw;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div id="todoHead">
+
+            <div class="row">
+                <div class="text-center">
+                    <h1 class="fw-semibold">Desafio - Todo List</h1>
+                    <p class="fw-light my-3">Puedes agregar tus trabajos a realizar, ademas de visualizar los trabajos pendientes y realizados</p>
+                </div>
+            </div>
+
+            <div class="row text-center mt-1">
+                <div class="col-md-4">
+                    <p class="fw-bold" id="totalTodos">
+                        <span class="fs-4" id="totalTasks"></span> 
+                        <br>
+                        <span class="fw-light fs-3">Total Tareas</span>
+                    </p>
+
+                </div>
+
+                <div class="col-md-4">
+                    <p class="fw-bold" id="remainingTodos">
+                        <span class="fs-4" id="totalTaskRemaining"> </span>
+                        <br>
+                        <span class="fw-light fs-3">Pendientes</span>
+                    </p>
+
+                </div>
+
+                <div class="col-md-4">
+                    <p class="fw-bold" id="doneTodos">
+                        <span class="fs-4" id="totalTasksDone"></span>
+                        <br>
+                        <span class="fw-light fs-3">Realizadas</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="todoInoputs">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" value="" placeholder="Trabajo a realizar" aria-label="Add Todo" id="txtTodoInput">
+                <button class="btn btn-outline-secondary" type="button" id="btnAddTodo">Ingresar</button>
+            </div>
+        </div>
+
+        <div id="taskListBody">
+            <ul class="list-group" id="todoListItems">
+            </ul>
+        </div>
+    </div>
+
+    <!--SCRIPT UTILIZADOS-->
+
+    <!--Script de Trabajo-->
+    <script src="assets/js/main.js" defer></script>
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
